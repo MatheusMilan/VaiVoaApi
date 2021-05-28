@@ -7,6 +7,12 @@ namespace VaiVoaApi.Model
 {
     public class Pessoa
     {
+        public Pessoa(string email, List<Cartao> cartoesVirtuais)
+        {
+            Email = email;
+            CartoesVirtuais = cartoesVirtuais;
+        }
+
         public int Id { get; set; }
         public string Email { get; set; }
         public List<Cartao> CartoesVirtuais { get; set; }
